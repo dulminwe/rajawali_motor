@@ -1,0 +1,12 @@
+runtime: php74
+
+service: abdul
+
+entrypoint: serve /router.php
+
+handlers:
+  - url: /css
+    static_dir: css
+
+  - url: /images
+    static_dir: images
